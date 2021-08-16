@@ -88,27 +88,5 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
-/*==================== SCROLL REVEAL ANIMATION ====================*/
-const sr = ScrollReveal({
-    distance: '30px',
-    duration: 1800,
-    reset: true,
-});
-
-sr.reveal(`.home__data, .home__img, 
-           .features__data,
-           .team__content,
-           .footer__content`, {
-    origin: 'top',
-    interval: 200,
-})
-
-sr.reveal(`.about__img, .send__content`, {
-    origin: 'left'
-})
-
-sr.reveal(`.about__data, .send__img`, {
-    origin: 'right'
-})
 
 
